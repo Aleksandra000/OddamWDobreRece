@@ -2,13 +2,13 @@ nav {
   width: 100%;
   color: $dark-grey;
 }
-
 .nav-header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-right: 70px;
   font-size: 10px;
+  //position: fixed;
   li {
     list-style-type: none;
     margin-top: 20px;

@@ -5,7 +5,7 @@ class HomeHeader extends React.Component {
 
     render() {
         return (
-            <div className="homeheader">
+            <div className="homeheader" id="start">
                 <div className="header-img"></div>
                 <div className="header-a">
                     <div className="header-text">
