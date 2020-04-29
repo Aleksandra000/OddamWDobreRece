@@ -1,5 +1,8 @@
 @import "settings/fonts";
 @import "settings/colors";
 body {
-  font-family: $font-alt;
-}
+  font-family: $font-base;
+};
+@import "././components/Nav.scss";
+@import "././components/Home.scss";
+@import "././components/HomeHeader.scss";
