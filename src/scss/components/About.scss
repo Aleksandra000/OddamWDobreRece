@@ -1,6 +1,6 @@
 .about-main {
   width: 100%;
-  height: 550px;
+  height: 800px;
   display: flex;
   .about1, .about2{
     width: 50%;
@@ -14,21 +14,26 @@
     justify-content: center;
     .about-title {
       font-size: 25px;
+      margin-top: 110px;
+
     }
     .about-deco {
       background-image: url('../../image/Decoration.svg');
       background-position: center;
       background-repeat: no-repeat;
-      margin: 26px auto;
+      margin: 10px auto;
       height: 40px;
       width: 180px;
     }
     .about-text {
       width: 70%;
-      font-size: 20px;
+      font-size: 24px;
       letter-spacing: -0.6px;
-      line-height: 1.6em;
       text-align: center;
+      line-height: 40px;
+      font-weight:500;
+
+
     }
     .about-signature {
       width: 190px;

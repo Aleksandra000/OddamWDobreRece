@@ -26,11 +26,10 @@ nav {
     }
   }
 }
-
 .small_nav {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 70px;
+  justify-content: end;
+  //margin-right: 70px;
   font-size: 13px;
   list-style-type: none;
   text-decoration: none;

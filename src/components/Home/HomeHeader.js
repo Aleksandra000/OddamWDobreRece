@@ -9,13 +9,13 @@ class HomeHeader extends React.Component {
                 <div className="header-img"></div>
                 <div className="header-a">
                     <div className="header-text">
-                        <h2>Zacznij pomagać!</h2>
-                        <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
+                        <h2 className="header-text-a">Zacznij pomagać!</h2>
+                        <h2 className="header-text-a">Oddaj niechciane rzeczy w zaufane ręce</h2>
                     </div>
                     <div className="deco"></div>
                     <div className="buttons-box">
                         <Link to='/logowanie' className='buttons'>oddaj<br></br>rzeczy</Link>
-                        <Link to='/logowanie' className='buttons'>zorganizuj zbiórkę</Link>
+                        <Link to='/logowanie' className='buttons'>zorganizuj <br></br>zbiórkę</Link>
                     </div>
                 </div>
             </div>
