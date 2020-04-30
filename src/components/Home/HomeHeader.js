@@ -14,8 +14,8 @@ class HomeHeader extends React.Component {
                     </div>
                     <div className="deco"></div>
                     <div className="buttons-box">
-                        <Link to='/oddaj-rzeczy' className='buttons'>oddaj<br></br>rzeczy</Link>
-                        <Link to='/oddaj-rzeczy' className='buttons'>zorganizuj zbiórkę</Link>
+                        <Link to='/logowanie' className='buttons'>oddaj<br></br>rzeczy</Link>
+                        <Link to='/logowanie' className='buttons'>zorganizuj zbiórkę</Link>
                     </div>
                 </div>
             </div>

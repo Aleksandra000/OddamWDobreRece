@@ -1,0 +1,45 @@
+.who-main {
+  width: 100%;
+  text-align: center;
+  color: $grey;
+  .who-title {
+    margin-top: 60px;
+    font-size: 25px;
+  }
+  .who-deco{
+    width: 180px;
+    height: 40px;
+    background-image: url('../../image/Decoration.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 30px auto;
+  }
+  .who-org {
+    margin-right: 40px;
+    //margin: 10px auto;
+    //width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .who-chose {
+      text-decoration: none;
+      height: 70px;
+      width: 210px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $grey;
+      }
+    }
+  }
+  .who-text {
+    width: 600px;
+    margin: 40px auto;
+    font-size: 20px;
+    text-align: center;
+  }
+  }
+

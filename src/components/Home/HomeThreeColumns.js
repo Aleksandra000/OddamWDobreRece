@@ -3,7 +3,7 @@ import React from "react";
 class HomeThreeColumns extends React.Component {
     render() {
         return (
-            <div className="homethreecolumns" id="threecol">
+            <div className="homethreecolumns">
                 <div className="homethreecolumns-a">
                     <div className="column">
                         <p className="column-nr">5</p>

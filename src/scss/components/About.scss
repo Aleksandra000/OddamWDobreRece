@@ -1,0 +1,49 @@
+.about-main {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  .about1, .about2{
+    width: 50%;
+    height: 100%;
+  }
+  .about1 {
+    align-items: center;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .about-title {
+      font-size: 25px;
+    }
+    .about-deco {
+      background-image: url('../../image/Decoration.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 26px auto;
+      height: 40px;
+      width: 180px;
+    }
+    .about-text {
+      width: 70%;
+      font-size: 20px;
+      letter-spacing: -0.6px;
+      line-height: 1.6em;
+      text-align: center;
+    }
+    .about-signature {
+      width: 190px;
+      height: 130px;
+      background-image: url('../../image/Signature.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      align-self: flex-end;
+      margin-top: 26px;
+      margin-right: 100px;
+    }
+  }
+  .about2 {
+    background-image: url('../../image/People.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+}
