@@ -43,9 +43,9 @@ class AboutUs extends React.Component {
                     <p className="who-title">Komu pomagamy?</p>
                     <div className="who-deco"></div>
                     <ul className="who-org">
-                        <li className="who-chose" onClick={this.changeFun}>Fundacjom</li>
-                        <li className="who-chose" onClick={this.changeOrg}>Organizacjom<br></br>pozarządowym</li>
-                        <li className="who-chose" onClick={this.changeLoc}>Lokalnym<br></br>zbiórkom</li>
+                        <li className="who-chose" >Fundacjom</li>
+                        <li className="who-chose" >Organizacjom<br></br>pozarządowym</li>
+                        <li className="who-chose" >Lokalnym<br></br>zbiórkom</li>
                     </ul>
                     <p className="who-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum placeat magni voluptas accusantium optio temporibus iure similique obcaecati!</p>
 
