@@ -41,5 +41,18 @@
     font-size: 20px;
     text-align: center;
   }
+  .who-page {
+    margin: 20px auto;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      list-style-type: none;
+      padding: 15px;
+      border: 1px solid $grey;
+      margin: 30px 20px;
+    }
+  }
   }
 

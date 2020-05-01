@@ -5,7 +5,8 @@ import HomeSimpleSteps from './HomeSimpleSteps';
 import Nav from '../Nav/Nav';
 import SmallNav from "../Nav/SmallNav";
 import AboutUs from "../AboutUs";
-import WhoWeHelp from "../WhoWeHelp"
+import WhoWeHelp from "../WhoWeHelp";
+import Contact from "../Contact";
 
 class Home extends React.Component {
 
@@ -19,6 +20,7 @@ class Home extends React.Component {
                 <HomeSimpleSteps/>
                 <AboutUs/>
                 <WhoWeHelp/>
+                <Contact/>
             </div>
         );
     }
