@@ -1,0 +1,84 @@
+.login {
+  width: 500px;
+  height: 430px;
+  margin: 120px auto 0;
+  position: relative;
+
+  .login-title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .login-deco {
+    width: 240px;
+    height: 36px;
+    background-image: url('../../image/Decoration.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 26px auto;
+  }
+  form {
+    width: 400px;
+    height: 230px;
+    margin: 30px auto 0;
+    padding-bottom: 20px;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .login-form {
+      width: 300px;
+      //background-color: green;
+      input {
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $dark-grey;
+        background-color: $white;
+
+      }
+    }
+  }
+.labels{
+  font-weight: 600;
+}
+  .login-button1 {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background: white;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top-top: 10px;
+    //background-color: yellow;
+    margin: -50px;
+    //padding-top: 20px;
+    &:hover {
+      border: 1px solid $dark-grey;
+    }
+  }
+}
+.login-button2 {
+  width: 120px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  background: white;
+  position: absolute;
+  //background-color: red;
+  margin: -50px;
+  right: 20px;
+  bottom: 0;
+  &:hover {
+    border: 1px solid $dark-grey;
+  }
+
+}
+
