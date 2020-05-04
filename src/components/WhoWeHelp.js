@@ -1,105 +1,181 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 
-class Pagination extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-             fundacje: [
-                    {name: 'Fundacja "Dbam o Zdrowie"', desc: 'Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej', what: 'ubrania, jedzenie, sprzęt AGD, meble, zabawki'},
-                    {name: 'Fundacja "Dla Dzieci"', desc: 'Cel i misja: Pomoc dzieciom z ubogich rodzin', what: 'ubrania, meble, zabawki'},
-                    {name: 'Fundacja "Bez Domu"', desc: 'Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania', what: 'ubrania, jedzenie, ciepłe koce'},
-                    {name: 'Fundacja "Dbam o Zdrowie"', desc: 'Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej', what: 'ubrania, jedzenie, sprzęt AGD, meble, zabawki'},
-                    {name: 'Fundacja "Dla Dzieci"', desc: 'Cel i misja: Pomoc dzieciom z ubogich rodzin', what: 'ubrania, meble, zabawki'},
-                    {name: 'Fundacja "Bez Domu"', desc: 'Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania', what: 'ubrania, jedzenie, ciepłe koce'},
-                    {name: 'Fundacja "Dbam o Zdrowie"', desc: 'Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej', what: 'ubrania, jedzenie, sprzęt AGD, meble, zabawki'},
-                    {name: 'Fundacja "Dla Dzieci"', desc: 'Cel i misja: Pomoc dzieciom z ubogich rodzin', what: 'ubrania, meble, zabawki'},
-                    {name: 'Fundacja "Bez Domu"', desc: 'Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania', what: 'ubrania, jedzenie, ciepłe koce'},
-                ],
-             organizacje: [
-                    {name: 'Organizacja Lorem Ipsum 1', desc: 'Quis varuis quam quisque id diam vel quam elementum pulvinar', what: 'Egestas, sed, tempus'},
-                    {name: 'Organizacja Lorem Ipsum 2', desc: 'Quis varuis quam quisque id diam vel quam elementum pulvinar', what: 'Egestas, sed, tempus'},
-                    {name: 'Organizacja Lorem Ipsum 3', desc: 'Quis varuis quam quisque id diam vel quam elementum pulvinar', what: 'Egestas, sed, tempus'},
-                    {name: 'Organizacja Lorem Ipsum 4', desc: 'Quis varuis quam quisque id diam vel quam elementum pulvinar', what: 'Egestas, sed, tempus'},
-                    {name: 'Organizacja Lorem Ipsum 5', desc: 'Quis varuis quam quisque id diam vel quam elementum pulvinar', what: 'Egestas, sed, tempus'},
-                    {name: 'Organizacja Lorem Ipsum 6', desc: 'Quis varuis quam quisque id diam vel quam elementum pulvinar', what: 'Egestas, sed, tempus'},
-                ],
-             lokalne: [
-                    {name: 'Zbiórka Lorem Ipsum 1', desc: 'Quis varuis quam quisque id diam vel quam elementum pulvinar', what: 'Egestas, sed, tempus'},
-                    {name: 'Zbiórka Lorem Ipsum 2', desc: 'Quis varuis quam quisque id diam vel quam elementum pulvinar', what: 'Egestas, sed, tempus'},
-                    {name: 'Zbiórka Lorem Ipsum 3', desc: 'Quis varuis quam quisque id diam vel quam elementum pulvinar', what: 'Egestas, sed, tempus'}
-                ],
-
-        }
-    }
+class Pagination extends React.Component {
     render() {
-        // const {names, currentPage, namesPerPage}=this.state;
-        // const indexOfLast = currentPage*namesPerPage;
-        // const indexOfFirst = indexOfLast - namesPerPage;
-        // const currentNames = names.slice(indexOfFirst,indexOfLast);
-        //
-        // const elements= currentNames.map((name,i)=>{
-        //     return <li key={i}> {name}</li>
-        // })
-        //
-        // const pageNumbers=[];
-        // for(let i=1;i<= Math.ceil(names.length/namesPerPage);i++)
-        // {
-        //     const element =<li key={i}
-        //     onClick={e=>this.handleClick(e,i)}
-        //     >{i}</li>
-        //     pageNumbers.push(element)
-        // }
-       console.log(this.state.fundacje);
-
-        // funkcja if currentSelection 1/2/3 to fundacje/organizacje/lokalne
-
-        return (
-            <div className="who-box" >
-                <div className="left__box">
-                    <p className="box__title">name</p>
-                    <p className="box__left__text">desc</p>
+        return(
+            <>
+            <div className='who-pag' >
+                <div className='who-a'>
+                    <h3 className='who-h3'>{this.props.name}</h3>
+                    <span className='who-desc'>{this.props.description}</span>
                 </div>
-                <div className="right__box">
-                    <p className="box__right__text">what</p>
+                <div className='who-b'>
+                    <span>{this.props.what}</span>
                 </div>
-                <ul className="who-page"> {"pageNumbers"}</ul>
             </div>
+                <hr className='who-hr' ></hr>
+            </>
         )
     }
 }
 
 class WhoWeHelp extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-           currentSelection:1,
-        }
-    }
+    state={
+        data:{
+            'organizacje':[
+                {
+                    name:`Organizacja "Lorem Ipsum 1"`,
+                    description:"Quis varuis quam quisque id diam vel quam elementum pulvinar",
+                    what: 'Egestas, sed, tempus'
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 2"`,
+                    description:"Quis varuis quam quisque id diam vel quam elementum pulvinar",
+                    what: 'Egestas, sed, tempus'
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 3"`,
+                    description:"Quis varuis quam quisque id diam vel quam elementum pulvinar",
+                    what: 'Egestas, sed, tempus'
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 4"`,
+                    description:"Quis varuis quam quisque id diam vel quam elementum pulvinar",
+                    what: 'Egestas, sed, tempus'
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 5"`,
+                    description:"Quis varuis quam quisque id diam vel quam elementum pulvinar",
+                    what: 'Egestas, sed, tempus'
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 6"`,
+                    description:"Quis varuis quam quisque id diam vel quam elementum pulvinar",
+                    what: 'Egestas, sed, tempus'
+                }
+            ],
+            'fundacje':[
+                {
+                    name:`Fundacja "Dbam o Zdrowie"`,
+                    description:'Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej',
+                    what: 'ubrania, jedzenie, sprzęt AGD, meble, zabawki'
+                },
+                {
+                    name:`Fundacja "Dla Dzieci"`,
+                    description:  'Cel i misja: Pomoc dzieciom z ubogich rodzin',
+                    what: 'ubrania, meble, zabawki'
+                },
+                {
+                    name:`Fundacja "Bez Domu"`,
+                    description:'Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania',
+                    what: 'ubrania, jedzenie, ciepłe koce'
+                },
+                {
+                    name:`Fundacja "Dbam o Zdrowie 2"`,
+                    description:'Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej',
+                    what: 'ubrania, jedzenie, sprzęt AGD, meble, zabawki'
+                },
+                {
+                    name:`Fundacja "Dla Dzieci 2"`,
+                    description:  'Cel i misja: Pomoc dzieciom z ubogich rodzin',
+                    what: 'ubrania, meble, zabawki'
+                },
+                {
+                    name:`Fundacja "Bez Domu 2"`,
+                    description:'Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania',
+                    what: 'ubrania, jedzenie, ciepłe koce'
+                },
+                {
+                    name:`Fundacja "Dbam o Zdrowie 3"`,
+                    description:'Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej',
+                    what: 'ubrania, jedzenie, sprzęt AGD, meble, zabawki'
+                },
+                {
+                    name:`Fundacja "Dla Dzieci 3"`,
+                    description:  'Cel i misja: Pomoc dzieciom z ubogich rodzin',
+                    what: 'ubrania, meble, zabawki'
+                },
+                {
+                    name:`Fundacja "Bez Domu 3"`,
+                    description:'Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania',
+                    what: 'ubrania, jedzenie, ciepłe koce'
+                },
+            ],
+            'zbiorki':[
+                {
+                    name:`Zbiórka "Lorem Ipsum 1"`,
+                    description:'Quis varuis quam quisque id diam vel quam elementum pulvinar',
+                    what: 'Egestas, sed, tempus'
+                },
+                {
+                    name:`Zbiórka "Lorem Ipsum 2"`,
+                    description:'Quis varuis quam quisque id diam vel quam elementum pulvinar',
+                    what: 'Egestas, sed, tempus'
+                },
+                {
+                    name:`Zbiórka "Lorem Ipsum 3"`,
+                    description:'Quis varuis quam quisque id diam vel quam elementum pulvinar',
+                    what: 'Egestas, sed, tempus'
+                },
 
-    userSelection=(selection)=>{
-        this.setState(
-            {
-                currentSelection:selection
-            }
-        )
+            ],
+        },
+        currentSelection:"fundacje",
+        page:0,
     };
 
+//////////////////
+    userSelection=(type)=>{
+        this.setState({
+            currentSelection:type,
+            page:0});
+    };
+    itemPage=(nr)=>{
+        this.setState({
+            page:nr})
+    };
+    pageButtons=(nr)=>{
+        if (nr<2){
+            return null;
+        }else{
+            let buttons=[];
+            for (let i=0;i<nr;i++){
+                buttons.push(<button key={i} className="who-btn" onClick={()=>{this.itemPage(i)}}>{i+1}</button>)
+            }
+            return buttons;
+        }
+    };
+
+    //////////////////////////////
     render() {
+        const data=this.state.data;
+        const type=this.state.currentSelection;
+        const currentPage=this.state.page;
+
+        const number=Math.ceil(data[type].length/3);
+        let item = data[type].slice(currentPage*3,(currentPage+1)*3);
+
         return (
             <div className="who-main" id="who">
                     <p className="who-title">Komu pomagamy?</p>
                     <div className="who-deco"></div>
-                    <ul className="who-org">
-                        <li onClick={()=>this.userSelection(1)} className="who-chose" >Fundacjom</li>
-                        <li onClick={()=>this.userSelection(2)} className="who-chose" >Organizacjom<br></br>pozarządowym</li>
-                        <li onClick={()=>this.userSelection(3)} className="who-chose" >Lokalnym<br></br>zbiórkom</li>
+                    <ul className='who-org'>
+                        <li className="who-chose" onClick={()=>this.userSelection('fundacje')}> Fundacjom</li>
+                        <li className="who-chose" onClick={()=>this.userSelection('organizacje')}>Organizacjom<br/>pozarządowym</li>
+                        <li className="who-chose" onClick={()=>this.userSelection('zbiorki')}>Lokalnym<br/>zbiórkom</li>
                     </ul>
                     <p className="who-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum placeat magni voluptas accusantium optio temporibus iure similique obcaecati!</p>
 
-                <Pagination/>
+                    <div >
+                        {item.map((e,index)=>(
+                                <Pagination key={index} name={e.name} description={e.description} what={e.what} border={false}/>
+                            )
+                        )}
+                    </div>
+                    <div className="who-page">
+                        {this.pageButtons(number)}
+                    </div>
              </div>
-
         );
     }
 }

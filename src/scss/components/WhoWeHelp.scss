@@ -16,8 +16,6 @@
   }
   .who-org {
     margin-right: 40px;
-    //margin: 10px auto;
-    //width: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,15 +42,45 @@
   .who-page {
     margin: 20px auto;
     width: 200px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    li {
-      list-style-type: none;
-      padding: 15px;
-      border: 1px solid $grey;
-      margin: 30px 20px;
-    }
-  }
-  }
+    list-style-type: none;
 
+  }
+  }
+.who-hr{
+width: 1000px;
+}
+.who-btn{
+  height: 40px;
+  margin: 10px;
+  background: none;
+  font-size: 14px;
+  border: 1px solid $dark-grey;
+}
+.who-pag{
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-family: $font-alt;
+}
+.who-a{
+font-size: 16px;
+  text-align: left;
+}
+.who-b{
+  font-size: 12px;
+}
+.who-h3{
+  font-size: 18px;
+  font-weight: 200;
+}
+.who-desc{
+  font-size: 16px;
+  font-style: italic;
+}
