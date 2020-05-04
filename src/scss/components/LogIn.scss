@@ -38,7 +38,6 @@
         border-right: none;
         border-bottom: 1px solid $dark-grey;
         background-color: $white;
-
       }
     }
   }
@@ -49,7 +48,7 @@
 }
   .login-button1 {
     width: 120px;
-    height: 50px;
+    height: 80px;
     font-size: 18px;
     border: none;
     background: white;
@@ -85,3 +84,8 @@
   }
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
