@@ -56,9 +56,13 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    color: black;
     margin-top-top: 10px;
     //background-color: yellow;
     margin: -50px;
+    background: none;
+    margin-top:30px ;
+    line-height: 50px;
     //padding-top: 20px;
     &:hover {
       border: 1px solid $dark-grey;
