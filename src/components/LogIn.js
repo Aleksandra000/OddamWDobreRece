@@ -33,24 +33,22 @@ class LogIn extends React.Component {
         }
     };
     validate = () => {
-        const patterns = {
-            email: /^([a-z\d\.-]+)@([a-z\d-]+).([a-z]{2,8})(\.[a-z]{2,8})?$/,
-        };
+        const patterns = {email:/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/};
         let wrongEmail = "";
         let wrongPassword = "";
         const { email, password } = this.state;
         if (!patterns.email.test(email)) {
             wrongEmail = "Podany email jest nieprawidłowy!";
-            this.setState({ wrongEmail })
+            this.setState({ wrongEmail });
             return false;
         }
         if (password.length<6) {
             wrongPassword = "Podane hasło jest za krótkie";
-            this.setState({ wrongPassword })
+            this.setState({ wrongPassword });
             return false;
         }
         return true;
-    }
+    };
     render() {
         return (
             <div className="login">
