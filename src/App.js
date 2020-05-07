@@ -6,6 +6,7 @@ import LogOut from "./components/LogOut";
 import SmallNav from "./components/Nav/SmallNav";
 import Nav from "./components/Nav/Nav";
 import Register from "./components/Register";
+import Form from "./components/Form";
 class App extends React.Component {
 
   render() {
@@ -19,6 +20,7 @@ class App extends React.Component {
                 <Route exact path='/logowanie' component={LogIn}/>
                 <Route exact path='/wylogowano' component={LogOut}/>
                 <Route exact path='/rejestracja' component={Register}/>
+                <Route exact path='/oddaj-rzeczy' component={Form}/>
             </Switch>
           </div>
         </Router>
