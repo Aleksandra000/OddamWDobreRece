@@ -6,10 +6,10 @@
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.6",
     "css-reset-and-normalize": "^2.1.0",
-    "gh": "^2.8.3",
-    "gh-pages": "^2.2.0",
     "firebase": "^7.3.0",
     "font-awesome": "^4.7.0",
+    "gh": "^2.8.3",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
     "react": "^16.10.2",
@@ -29,6 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "eject": "react-scripts eject"
   },
   "browserslist": {
