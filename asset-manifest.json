@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/OddamWDobreRece/static/css/main.44c16b81.chunk.css",
+    "main.js": "/OddamWDobreRece/static/js/main.79152887.chunk.js",
+    "main.js.map": "/OddamWDobreRece/static/js/main.79152887.chunk.js.map",
+    "runtime-main.js": "/OddamWDobreRece/static/js/runtime-main.b3ecd34c.js",
+    "runtime-main.js.map": "/OddamWDobreRece/static/js/runtime-main.b3ecd34c.js.map",
+    "static/css/2.15abc31b.chunk.css": "/OddamWDobreRece/static/css/2.15abc31b.chunk.css",
+    "static/js/2.9b724edb.chunk.js": "/OddamWDobreRece/static/js/2.9b724edb.chunk.js",
+    "static/js/2.9b724edb.chunk.js.map": "/OddamWDobreRece/static/js/2.9b724edb.chunk.js.map",
+    "index.html": "/OddamWDobreRece/index.html",
+    "precache-manifest.62358bce87ab6853d861a868f24eda7e.js": "/OddamWDobreRece/precache-manifest.62358bce87ab6853d861a868f24eda7e.js",
+    "service-worker.js": "/OddamWDobreRece/service-worker.js",
+    "static/css/2.15abc31b.chunk.css.map": "/OddamWDobreRece/static/css/2.15abc31b.chunk.css.map",
+    "static/css/main.44c16b81.chunk.css.map": "/OddamWDobreRece/static/css/main.44c16b81.chunk.css.map",
+    "static/media/main.scss": "/OddamWDobreRece/static/media/Signature.e54cfcfc.svg",
+    "static/media/font-awesome.min.css": "/OddamWDobreRece/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3ecd34c.js",
+    "static/css/2.15abc31b.chunk.css",
+    "static/js/2.9b724edb.chunk.js",
+    "static/css/main.44c16b81.chunk.css",
+    "static/js/main.79152887.chunk.js"
+  ]
+}
